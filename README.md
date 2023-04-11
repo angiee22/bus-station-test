@@ -18,6 +18,7 @@ Request
 {
     "groups" : "1,2,1,1,1,2,1,3"
 }
+
 Response
 {
     "sizes" : "3,4,6,12"
@@ -60,7 +61,7 @@ Se realiza un bucle while con las capacidades *x* posibles del bus. En cada iter
         sum = 0;
     }
 ```
-La función *response* retorna la respuesta de las poibles capacidades *x* del bus 
+La función *response* retorna la respuesta de las posibles capacidades *x* del bus 
 
 ```
     const response = {
