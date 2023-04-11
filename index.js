@@ -1,21 +1,21 @@
 const BusStationTest = async(event) => {
     
-    const groups = event.data.split(",").map(Number);;
-    const nPeople = groups.reduce((acc, cur) => acc + cur, 0);
+    const group = event.groups.split(",").map(Number);
+    const nPeople = group.reduce((acc, cur) => acc + cur, 0);
 
-    let x = groups[0];
-    let sizes =[];
+    let x = group[0];
+    let size =[];
     let sum = 0;
     
     while (x <= nPeople) {
 
-        for(var i=0;i<groups.length;i++){
-            sum = sum + groups[i];
+        for(var i=0;i<group.length;i++){
+            sum = sum + group[i];
             if (sum == x){sum = 0;}
             else if (sum > x){break;}
         }
 
-        if (sum == 0){sizes.push(x);}
+        if (sum == 0){size.push(x);}
 
         x++;
         sum = 0;
@@ -23,9 +23,10 @@ const BusStationTest = async(event) => {
     
     const response = {
         statusCode: 200,
-        body: JSON.stringify({data: sizes}),
+        body: JSON.stringify({sizes: size}),
     };
     return response;
 };
 
 export const handler = BusStationTest;
+
