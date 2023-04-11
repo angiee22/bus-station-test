@@ -1,6 +1,6 @@
 # bus-station-test
 
-##Problema a resolver
+## Problema a resolver
 
 Se plantea desarrollar una solución a un problema lógico, el cuál debe implementar una función AWS Lambda en Java o Node JS. Esta debe exponerse como API REST a través del servicio AWS API GATEWAY.
 
@@ -23,7 +23,7 @@ Response
     "sizes" : "3,4,6,12"
 }
 
-##Descripción de la solución
+## Descripción de la solución
 
 **URL API :** https://6ay2h5tdi5.execute-api.us-east-2.amazonaws.com/test/bus-station-test
 
